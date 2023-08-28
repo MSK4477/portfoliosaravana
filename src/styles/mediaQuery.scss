@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+
+    .home img{
+        width: 100% !important;
+        position: relative;
+        top: 400px;
+    }
+    .homeText{
+        font-weight: bolder;
+        font-size: 1.5rem ;
+        padding: 10px; 
+        position: relative;
+        left: 80px;
+        }
+        .logo{
+            display: none !important;
+        }
+        .mainDetails{
+            a{
+                display: none !important;
+            }
+        }
+        .menuBar{
+            display:inline-block !important;
+            font-size: 50px !important;
+            position: relative;
+            left: 20px;
+            top: 20px;
+          }
+
+}

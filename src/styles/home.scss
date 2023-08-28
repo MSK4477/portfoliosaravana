@@ -1,0 +1,27 @@
+
+.home {
+    position: relative;
+    top: 90px;
+    width: 100%;
+    height: calc(100vh - 90px); /* Adjust the height calculation */
+  }
+  .menuBar{
+    display: none;
+  }
+  .homeText{
+     display: inline-block;
+     position: absolute;
+     top: 120px;
+     right: 80px;
+  }
+  .home img {
+    animation: imgUp 1.3s linear infinite alternate;
+    width: 50%;
+    object-fit: cover; 
+ }
+ @keyframes imgUp {
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  
