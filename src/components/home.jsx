@@ -1,31 +1,31 @@
-import React, { useState, useEffect } from "react";
-import homeSvg from "../svg/designer-9c.svg"
+import homeSvg from "../svg/designer-9c.svg";
+import TypeWriterEffect from 'typewriter-effect';
+
+
 const Home = () => {
-  const texts = ["Hello Im Saravana!!","Welcome to My Portfolio 🙂","I am A Passionate Fullstack Developer. 🧑🏾‍💻", "Check Out My Projects 👀", "Connect with Me 🔗"];
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      
-      // setCurrentTextIndex (currentTextIndex +1)
-      // if(currentTextIndex === texts.length){
-      //   setCurrentTextIndex (0)
-      // }
-
-      setCurrentTextIndex((currentTextIndex + 1) % texts.length)
-
-    }, 2500);
- 
-    return () => clearInterval(interval);
-  }, [currentTextIndex, texts.length]);
-console.log(currentTextIndex)
   return (
-    <div className="home">
-      <div className="homeText">
-        <h1 style={{color:"#ffffff", fontFamily:"Roboto"}}>{texts[currentTextIndex]}</h1> 
-        </div>
-        <img src={homeSvg} alt="homeImg" />
-        
+    <div className="home" id="home">
+      <h1>
+      <TypeWriterEffect
+            options={{
+              strings:  [
+                "Hello I'm Saravana!!",
+                "Welcome to My Portfolio..",
+                "I am a Passionate Fullstack Developer..",
+                "Check Out My Projects..",
+                "Connect with Me..",
+              ],
+              autoStart: true,
+              deleteSpeed:10,
+              loop: true,
+              
+              cursor: "|",
+              wrapperClassName: "typewriter",
+            }}
+          />
+          </h1>
+          <img src={homeSvg} alt="homeImg" />
     </div>
   );
 };

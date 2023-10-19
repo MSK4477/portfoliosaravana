@@ -1,27 +1,36 @@
-
+@import "colors.scss";
 .home {
-    position: relative;
-    top: 90px;
-    width: 100%;
-    height: calc(100vh - 90px); /* Adjust the height calculation */
-  }
-  .menuBar{
-    display: none;
-  }
-  .homeText{
-     display: inline-block;
-     position: absolute;
-     top: 120px;
-     right: 80px;
-  }
-  .home img {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  > img {
     animation: imgUp 1.3s linear infinite alternate;
     width: 50%;
-    object-fit: cover; 
- }
- @keyframes imgUp {
+  }
+  
+
+  > h1 {
+    color: $dark;
+    padding: 4rem;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .typewriter {
+    margin: 20px 0;
+    height: 20px;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #616060;
+
+  }
+
+  @keyframes imgUp {
     to {
       transform: translateY(-20px);
     }
   }
-  
+}

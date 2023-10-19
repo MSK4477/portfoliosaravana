@@ -1,0 +1,122 @@
+@import "colors";
+
+#projects {
+  display: flex;
+  width: 100%;
+ 
+  flex-direction: column;
+  height: max-content;
+  padding: 6vmax;
+  overflow: hidden;
+
+  position: relative;
+
+  > h2 {
+    font: 300 3rem $text2;
+    margin: 0 auto;
+    width: fit-content;
+    word-spacing: 4px;
+    border-bottom: 1px solid $second;
+  }
+  > section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    height: max-content;
+    margin-top: 5rem;
+    background-color: bisque;
+
+    div {
+      width: 430px;
+      height:min-content;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 7px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 3rem;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        transform: translateY(-20px);
+      }
+      > img {
+        width: 50%;
+      object-fit: contain;
+      }
+
+      > h2 {
+        font: 700 1.3rem $text2;
+        padding: 1rem 0;
+        color: rgb(242, 156, 43);
+      }
+      p {
+        line-height: 210%;
+        padding-bottom: 20px;
+        font-size:large;
+        color: rgb(166, 102, 19);
+      }
+      > a {
+        padding: 1rem 2rem;
+        border: none;
+        background-color: orangered;
+        border-radius: 4px;
+        cursor: pointer;
+        color: $first;
+
+        &:hover {
+          background-color: rgb(191, 76, 34);
+        }
+      }
+    }
+  }
+  .sourceCode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    width: 88%;
+    height: 100vh;
+    // top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+    > ul {
+      width: 500px;
+      background-color: rgb(255, 255, 255);
+      padding: 4vmax;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 7px;
+      > li {
+        font: 300 1.2rem $text2;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        color: orangered;
+      }
+    }
+    button {
+      padding: 0.8rem;
+      border: none;
+      background-color: orangered;
+      border-radius: 4px;
+      cursor: pointer;
+      color: $first;
+
+      &:hover {
+        background-color: rgb(191, 76, 34);
+      }
+    }
+  }
+}

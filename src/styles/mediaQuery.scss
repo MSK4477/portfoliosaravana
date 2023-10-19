@@ -1,31 +1,54 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px ) {
 
-    .home img{
-        width: 100% !important;
-        position: relative;
-        top: 400px;
-    }
-    .homeText{
-        font-weight: bolder;
-        font-size: 1.5rem ;
-        padding: 10px; 
-        position: relative;
-        left: 80px;
+
+
+    nav{
+
+        > main {
+            width: 100% !important;
+            justify-content: center !important;
+            padding: 0.3rem !important;
         }
-        .logo{
+         > h1 {
             display: none !important;
-        }
-        .mainDetails{
-            a{
-                display: none !important;
-            }
-        }
-        .menuBar{
-            display:inline-block !important;
-            font-size: 50px !important;
-            position: relative;
-            left: 20px;
-            top: 20px;
-          }
+         }
+         a{
+            margin: 1rem !important;
+         }
+    }
+    .home{
+      display: flex;
+   flex-direction: column !important;
+   justify-content: space-evenly !important;
+   align-items: center;
+   top: 0 !important;
+   justify-content: center ;
+   height: 100vh !important;
+   > h1 {
+    padding: 3rem !important;
+    margin: 0 !important;
+    display: inline-block;
+   } >img{
+    width: 70% !important;
+   }
+}
+  
+
 
 }
+//about
+@media screen and (max-width:1000px){
+#about {
+   height: max-content !important;
+
+>section { 
+  display: flex !important;
+  flex-direction: column-reverse !important;
+
+}
+.end{
+   display: none !important;
+}
+}
+}
+
