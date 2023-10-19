@@ -15,12 +15,12 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    padding: 13vmax;
+    padding: 6vmax;
     background-color: rgb(255, 248, 248);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     > h1 {
       position: absolute;
-      top: 10%;
+      top: 1%;
       margin: auto;
       font: 700 3rem $text2;
       width: fit-content;

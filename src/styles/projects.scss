@@ -6,7 +6,7 @@
  
   flex-direction: column;
   height: max-content;
-  padding: 6vmax;
+  padding: 2vmax;
   overflow: hidden;
 
   position: relative;
@@ -30,7 +30,7 @@
     background-color: bisque;
 
     div {
-      width: 430px;
+      width: 350px;
       height:min-content;
       padding: 3rem;
       display: flex;
@@ -56,8 +56,8 @@
         color: rgb(242, 156, 43);
       }
       p {
-        line-height: 210%;
-        padding-bottom: 20px;
+        line-height: 170%;
+        padding-bottom: 10px;
         font-size:large;
         color: rgb(166, 102, 19);
       }
