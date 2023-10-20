@@ -1,0 +1,43 @@
+@import "colors.scss";
+
+footer { 
+width: 100%;
+height: 30vh;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+.footerContent{
+    border-left:  1px solid $first;
+    border-right:  1px solid $first;
+    width: max-content;
+   
+a {
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    color: rgb(0, 115, 255);
+    margin: 1rem;
+    &:hover {
+filter: invert(2);
+    }
+}
+}
+>p{
+    position: relative;
+    top: 2rem;
+    color: $first;
+    font: 500 1.5rem $text1;
+}
+.upIcon{
+   position: absolute;
+   right: 3%;
+   border-radius: 50%;
+
+    color: white;
+    >i{
+        cursor: pointer;
+    }
+}
+}

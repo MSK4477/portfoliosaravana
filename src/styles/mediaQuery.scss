@@ -1,54 +1,100 @@
-@media screen and (max-width: 768px ) {
-
-
-
-    nav{
-
-        > main {
-            width: 100% !important;
-            justify-content: center !important;
-            padding: 0.3rem !important;
-        }
-         > h1 {
-            display: none !important;
-         }
-         a{
-            margin: 1rem !important;
-         }
+@media screen and (max-width: 768px) {
+  #home {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    align-items: center;
+    top: 0 !important;
+    justify-content: center;
+    height: 100vh !important;
+    > h1 {
+      padding: 3rem !important;
+      margin: 0 !important;
+      display: inline-block;
     }
-    .home{
-      display: flex;
-   flex-direction: column !important;
-   justify-content: space-evenly !important;
-   align-items: center;
-   top: 0 !important;
-   justify-content: center ;
-   height: 100vh !important;
-   > h1 {
-    padding: 3rem !important;
-    margin: 0 !important;
-    display: inline-block;
-   } >img{
-    width: 70% !important;
-   }
-}
-  
+    > img {
+      width: 70% !important;
+    }
+  }
 
-
+  //contact
+  #contact {
+    padding: 4vmax !important;
+    > form {
+      height: 400px !important;
+      > input {
+        width: 70% !important;
+      }
+      > button {
+        width: 70% !important;
+      }
+    }
+  }
 }
 //about
-@media screen and (max-width:1000px){
-#about {
-   height: max-content !important;
+@media screen and (max-width: 1000px) {
+  #about {
+    height: max-content !important;
 
->section { 
-  display: flex !important;
-  flex-direction: column-reverse !important;
+    > section {
+      display: flex !important;
+      flex-direction: column-reverse !important;
+    }
+    .end {
+      display: none !important;
+    }
+  }
+}
 
+//projects
+#projects {
+  padding: 0 !important;
 }
-.end{
-   display: none !important;
-}
-}
+//contact
+@media screen and (max-width: 500px) {
+  > form {
+    > input {
+      width: 100% !important;
+    }
+    > button {
+      width: 100% !important;
+    }
+  }
+  #about {
+    padding: 3vmax !important;
+  }
+  #skills {
+    padding: 1vmax !important;
+    padding-top: 2vmax !important;
+  }
 }
 
+//header
+@media screen and (max-width: 860px) {
+  nav {
+    h1 {
+      font-size: medium;
+    }
+    padding: 0.5 !important;
+    a {
+      display: none;
+    }
+    #menuIcon {
+      display: block !important;
+      display: flex !important;
+      justify-content: flex-end !important;
+      align-items: flex-end !important;
+    }
+  }
+  .typewriter {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width:337px){
+  footer {
+    >p{
+      font-size: 0.7rem !important;
+    }
+  }
+}

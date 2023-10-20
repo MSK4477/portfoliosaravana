@@ -1,25 +1,47 @@
 import "./styles/App.scss";
-import Header from "./layout/header"
+import Header from "./layout/header";
 import Home from "./components/home";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
-import "./styles/mediaQuery.scss"
+import Contact from "./components/contact";
+import Footer from "./components/footer";
+import "./styles/mediaQuery.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
 import "./styles/about.scss";
 import "./styles/projects.scss";
 import "./styles/skills.scss";
+import "./styles/contact.scss";
+import "./styles/footer.scss";
 function App() {
   return (
     <>
-        <Header />
-        <Home />
-        <About />
-        <Projects />
-        <Skills />
-
-     
+      <Header />
+      <Home />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+      <div
+      title="Send Mail"
+        style={{
+          position: "fixed",
+          top: "50%",
+          padding:"3px",
+          backgroundColor: "black",
+          cursor: "pointer",
+          borderRadius: "5px",
+          left: "2%",
+        }}
+      >
+        <a
+          style={{ color: "orangeRed", fontStyle: "italic", padding:"3px"}}
+          href="mailto:official.ks7997068@gmail.com"
+        >
+<i className="fa-solid fa-envelope" style={{color:"#fafcff"}}></i>        </a>
+      </div>
     </>
   );
 }

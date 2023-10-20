@@ -3,11 +3,11 @@
   width: 100%;
   height:max-content;
   background-color: rgb(238, 232, 232);
-  padding: 6vmax;
+  padding: 5vmax;
   overflow: hidden;
   position: relative;
   h2 {
-    font: 300 3rem $text2;
+    font: 300 2rem $text2;
     margin: 0 auto;
     width: fit-content;
     word-spacing: 4px;
@@ -45,7 +45,7 @@
         letter-spacing: 3px;
         line-height: 170%;
         margin: 2rem;
-        font: 200 2rem $text2;
+        font: 200  $text2;
         color: rgb(174, 137, 101);
       }
     }

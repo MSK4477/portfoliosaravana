@@ -15,24 +15,24 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    padding: 6vmax;
+    padding-top: 7rem;
     background-color: rgb(255, 248, 248);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     > h1 {
       position: absolute;
-      top: 1%;
+      top: 0;
       margin: auto;
-      font: 700 3rem $text2;
+      font: 300 2rem $text2;
       width: fit-content;
       border-bottom: 1px solid;
     }
     .mainSection {
       background-color: white;
       padding: 3rem 4rem;
-      width: 300px;
+      width: 190px;
 
       transition: all 0.3s ease-in-out;
-      height: 200px;
+      height: 130px;
       margin: 1rem;
       border-radius: 10%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -43,7 +43,7 @@
       }
 
       > img {
-        width: 50%;
+        width: 60%;
       }
     }
   }

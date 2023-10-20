@@ -1,18 +1,50 @@
+import React, { useState } from "react";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(true);
 
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
-    <nav>
-      <h1>Saravana.</h1>
-      <main>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </main>
-    </nav>
+    <>
+   
+      {showMenu ? (
+         <nav id={showMenu ? "header": ""}>
+         <h1>Saravana</h1> 
+
+        <main>
+           <i
+            onClick={toggleMenu}
+            className="fa-solid fa-bars"
+            id="menuIcon"
+            style={{ color: "#000000" }}
+          ></i>
+          <a href="#home" >Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact" >Contact</a>
+        </main>
+            </nav>
+
+      ) : (
+        <div id="menu">
+          <i
+            onClick={toggleMenu}
+            className="fa-solid fa-bars"
+            id="menuIcon"
+            style={{ color: "#000000" }}
+          ></i>
+           <a href="#home" onClick={toggleMenu}>Home</a>
+          <a href="#about" onClick={toggleMenu}>About</a>
+          <a href="#projects" onClick={toggleMenu}>Projects</a>
+          <a href="#skills" onClick={toggleMenu}>Skills</a>
+          <a href="#contact" onClick={toggleMenu}>Contact</a>
+        </div>
+      )}
+</>
   );
 };
 

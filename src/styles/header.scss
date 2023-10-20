@@ -1,6 +1,6 @@
 @import "colors.scss";
 
-nav{
+#header{
   width: 100%;
   height: 100px;
   display: flex;
@@ -12,6 +12,7 @@ nav{
   top: 0%;
   padding: 0 2rem;
   z-index: 99;
+ 
   > h1 {
     text-transform: uppercase;
     color: $first;
@@ -37,7 +38,9 @@ nav{
     }
   
   }
-
+  #menuIcon{
+    display: none;
+  }
   >main {
     width: 70%;
     display: flex;
@@ -64,5 +67,38 @@ nav{
 
   
   
+  }
+}
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0% !important;
+  top: 100px;
+  width: 100%;
+  height: 90vh;
+  left: 0;
+  background-color: rgb(241, 241, 241);
+  z-index: 3;
+
+  #menuIcon{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 2rem;
+  }
+  > a {
+    margin: 2rem;
+    color: $dark;
+    display: block !important;
+    font:500 1rem $text2;
+    transition: all 0.4s;
+    letter-spacing: 1px;
+    &:hover {
+      color: rgb(0, 177, 248);
+      border-bottom: 2px solid skyblue;
+    }
   }
 }

@@ -3,6 +3,7 @@
 #projects {
   display: flex;
   width: 100%;
+  height: max-content;
  
   flex-direction: column;
   height: max-content;
@@ -12,7 +13,7 @@
   position: relative;
 
   > h2 {
-    font: 300 3rem $text2;
+    font: 300 2rem $text2;
     margin: 0 auto;
     width: fit-content;
     word-spacing: 4px;
@@ -30,7 +31,7 @@
     background-color: bisque;
 
     div {
-      width: 350px;
+      width: 300px;
       height:min-content;
       padding: 3rem;
       display: flex;
@@ -51,18 +52,18 @@
       }
 
       > h2 {
-        font: 700 1.3rem $text2;
+        font: 400 1rem $text2;
         padding: 1rem 0;
         color: rgb(242, 156, 43);
       }
       p {
         line-height: 170%;
         padding-bottom: 10px;
-        font-size:large;
+        font-size:smaller;
         color: rgb(166, 102, 19);
       }
       > a {
-        padding: 1rem 2rem;
+        padding: 0.3rem 2rem;
         border: none;
         background-color: orangered;
         border-radius: 4px;

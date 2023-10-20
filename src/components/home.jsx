@@ -5,7 +5,7 @@ import TypeWriterEffect from 'typewriter-effect';
 const Home = () => {
 
   return (
-    <div className="home" id="home">
+    <div  id="home">
       <h1>
       <TypeWriterEffect
             options={{
