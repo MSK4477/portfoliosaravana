@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 const Contact = () => {
   const [data, setData] = useState({ name: "", email: "", message: "" });
