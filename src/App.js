@@ -40,7 +40,7 @@ function App() {
           style={{ color: "orangeRed", fontStyle: "italic", padding:"3px"}}
           href="mailto:official.ks7997068@gmail.com"
         >
-<i className="fa-solid fa-envelope" id="mail" o style={{color:"#fafcff",hover:""}}></i></a>
+<i className="fa-solid fa-envelope" id="mail"  style={{color:"#fafcff",hover:""}}></i></a>
       </div>
     </>
   );
