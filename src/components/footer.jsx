@@ -18,7 +18,7 @@ function Footer() {
             </div>
             <p >Consistency is The Key To Success</p>
             <div className="upIcon">
-            <a href="#home"><i className="fa-solid fa-up-long" style={{color:"white"}}></i></a>
+            <a href="#home"><i id="up" className="fa-solid fa-up-long" ></i></a>
             </div>
         </footer>
     );

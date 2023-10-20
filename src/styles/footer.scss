@@ -36,8 +36,18 @@ filter: invert(2);
    border-radius: 50%;
 
     color: white;
-    >i{
+   
+    #up{
         cursor: pointer;
+        color: $first;
+        &:hover {
+            color:orangered;
+        }
     }
 }
 }
+#mail{
+    &:hover{
+      color: orangered;
+    }
+  }
