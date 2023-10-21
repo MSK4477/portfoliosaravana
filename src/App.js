@@ -1,4 +1,5 @@
 import "./styles/App.scss";
+import { Toaster } from "react-hot-toast";
 import Header from "./layout/header";
 import Home from "./components/home";
 import About from "./components/about";
@@ -24,6 +25,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
+      <Toaster />
       <div
       title="Send Mail"
         style={{

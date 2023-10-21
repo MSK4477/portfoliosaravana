@@ -1,16 +1,32 @@
 import { useState } from "react";
-
+import toast from "react-hot-toast";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../firebase";
 const Contact = () => {
-  const [data, setData] = useState({ name: "", email: "", message: "" });
-
+  const initialState = { name: "", email: "", message: "" }
+  const [data, setData] = useState(initialState);
+const [disableBtn, setDisableBtn] = useState(false)
   const handleChange = (e) => {
     const { name, value } = e.target;
     setData({ ...data, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(data);
+    setDisableBtn(true);
+    try {
+      await addDoc(collection(db, "contacts"), 
+      
+        data
+      );
+     setData(initialState)
+      toast.success("Message Sent");
+      setDisableBtn(false);
+    } catch (error) {
+      toast.error("Error");
+      console.log(error);
+      setDisableBtn(false);
+    }
   };
 
   return (
@@ -20,7 +36,7 @@ const Contact = () => {
         <input
           type="text"
           name="name"
-          placeholder="name"
+          placeholder="Your Name"
           required={true}
           minLength={3}
           value={data.name}
@@ -29,7 +45,7 @@ const Contact = () => {
         <input
           type="email"
           name="email"
-          placeholder="email"
+          placeholder="Your Email"
           required={true}
           minLength={3}
           value={data.email}
@@ -38,14 +54,14 @@ const Contact = () => {
         <input
           type="text"
           name="message"
-          placeholder="message"
+          placeholder="Your Message"
           required={true}
           minLength={3}
           value={data.message}
           onChange={handleChange}
         />
         <br />
-        <button>Send</button>
+        <button className={disableBtn ? "disableBtn" : ""} disabled={disableBtn}>Send</button>
       </form>
     </main>
   );
