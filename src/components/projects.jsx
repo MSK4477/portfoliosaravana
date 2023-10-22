@@ -18,13 +18,10 @@ const Projects = () => {
       return
     }
   }
-console.log(id)
   const close = () => {
     setToogle(false)
     setId("")
-    console.log("fe ekgk kgegek gke f")
   }
-  console.log("id", id)
   return (
     <main id="projects">
         <h2  id={id}>Projects</h2>
