@@ -6,7 +6,7 @@ import About from "./components/about";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
-import Footer from "./components/footer";
+import Footer from "./layout/footer";
 import "./styles/mediaQuery.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
@@ -40,7 +40,7 @@ function App() {
       >
         <a
           style={{ color: "orangeRed", fontStyle: "italic", padding:"3px"}}
-          href="mailto:official.ks7997068@gmail.com"
+          href="mailto:ks7997068@gmail.com"
         >
 <i className="fa-solid fa-envelope" id="mail"  style={{color:"#fafcff",hover:""}}></i></a>
       </div>
