@@ -91,10 +91,11 @@
     letter-spacing: 3px;
   }
 }
-@media screen and (max-width:337px){
+//footer
+@media screen and (max-width:376px){
   footer {
     >p{
-      font-size: 0.7rem !important;
+      font-size: 1rem !important;
     }
   }
 }
