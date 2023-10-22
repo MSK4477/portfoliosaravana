@@ -1,6 +1,6 @@
 import homeSvg from "../svg/designer-9c.svg";
 import TypeWriterEffect from 'typewriter-effect';
-import resume from "../svg/resume.Saravana.pdf"
+import resume from "../svg/resume.pdf"
  
 const Home = () => {
 
