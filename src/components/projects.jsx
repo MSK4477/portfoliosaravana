@@ -14,7 +14,6 @@ const Projects = () => {
       setToogle(!toogle)
       setId(e - 1)
       console.log(id)
-      console.log(data.projects[e - 1])
       return
     }
   }
@@ -27,7 +26,7 @@ const Projects = () => {
         <h2  id={id}>Projects</h2>
 <section>
 {data.projects.map((item) => (
-  <div  key={item.id}>
+  <div   key={item.id}>
     <img src={item.img} alt="projImg" />
     <h2 >{item.title}</h2>
     <p>{item.description}</p>
