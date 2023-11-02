@@ -45,9 +45,10 @@ toogle && id !== "" &&
   <ul>
   <li>{data?.projects[id]?.title}</li><br />
 <li ><a target="_blank" rel="noreferrer" href={data?.projects[id]?.frontendSourceCode} >Frontend Source Code</a></li><br />
-<li><a target="_blank" rel="noreferrer" href={data?.projects[id]?.backendSourceCode}>Backend Source Code</a></li><br />
-<li><a target="_blank" rel="noreferrer" href={data?.projects[id]?.frontendDeployed}>Frontend Deployed</a></li><br />
-<li><a target="_blank" rel="noreferrer" href={data?.projects[id]?.backendDeployed}>Backend Deployed</a></li><br />
+{data?.projects[id]?.backendSourceCode.length  > 1 &&<><li><a target="_blank" rel="noreferrer" href={data?.projects[id]?.backendSourceCode}>Backend Source Code</a></li><br />
+</>}
+<li><a target="_blank" rel="noreferrer" href={data?.projects[id]?.frontendDeployed}>Frontend Deployed</a></li><br /> 
+{data?.projects[id]?.backendDeployed.length  > 1 && <><li><a target="_blank" rel="noreferrer" href={data?.projects[id]?.backendDeployed}>Backend Deployed</a></li><br /> </> }
 
 <button onClick={close} >Close</button>
 </ul>

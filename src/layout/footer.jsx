@@ -6,9 +6,7 @@ function Footer() {
                 <a href="https://github.com/MSK4477">
                 <i className="fa-brands fa-github" style={{color:"#ffffff;"}}></i>
                 </a>
-                <a href="https://www.instagram.com/_saravana._.20._/">
-                <i className="fa-brands fa-instagram" style={{color:"#ffffff;"}}></i>
-                </a>
+                
                 <a href="https://www.linkedin.com/in/saravana043/">
 
                 <i className="fa-brands fa-linkedin" style={{color:"#ffffff;"}}></i>
