@@ -29,7 +29,6 @@ const Projects = () => {
   <div   key={item.id}>
     <img src={item.img} alt="projImg" />
     <h2 >{item.title}</h2>
-    <p>{item.description}</p>
     <a href={`#${id}`} onClick={()=> handleClick(item.id)} className='btn'>View</a>
     </div>
 
@@ -50,7 +49,7 @@ toogle && id !== "" &&
 <li><a target="_blank" rel="noreferrer" href={data?.projects[id]?.frontendDeployed}>Frontend Deployed</a></li><br /> 
 {data?.projects[id]?.backendDeployed.length  > 1 && <><li><a target="_blank" rel="noreferrer" href={data?.projects[id]?.backendDeployed}>Backend Deployed</a></li><br /> </> }
 
-<button onClick={close} >Close</button>
+<button  onClick={close} >Close</button>
 </ul>
 </div>
 </>

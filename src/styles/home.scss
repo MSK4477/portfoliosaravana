@@ -35,12 +35,12 @@
   }
   #resume {
     position: absolute;
-    right: 1%;
+    left: 1%;
     top: 90%;
     padding: 13px;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: orangered;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font: 200 1rem $text1;
 // transition-delay: 0.3s;

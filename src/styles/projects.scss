@@ -33,14 +33,15 @@
     background-color: bisque;
 
     div {
-      width: 300px;
-      height:min-content;
-      flex: 1 1 0%;
+      width:250px;
+      height:230px;
+      // flex: 1 1 0%;
       padding: 3rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       border-radius: 7px;
+      position: relative;
       background-color: rgb(255, 255, 255);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       margin-bottom: 3rem;
@@ -55,9 +56,11 @@
       }
 
       > h2 {
-        font: 400 1rem $text2;
+        font: 300 0.7rem $text2;
         padding: 1rem 0;
         color: rgb(242, 156, 43);
+        position: absolute;
+        bottom: 30%;
       }
       p {
         line-height: 170%;
@@ -72,6 +75,8 @@
         border-radius: 4px;
         cursor: pointer;
         color: $first;
+        position: absolute;
+        bottom: 10%;
 
         &:hover {
           background-color: rgb(191, 76, 34);
