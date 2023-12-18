@@ -21,6 +21,7 @@ const Header = () => {
             id="menuIcon"
             style={{ color: "#000000" }}
           ></i>
+
           <a href="#home" >Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
@@ -30,12 +31,13 @@ const Header = () => {
             </nav>
 
       ) : (
+
         <div id="menu">
           <i
             onClick={toggleMenu}
-            className="fa-solid fa-bars"
-            id="menuIcon"
-            style={{ color: "#000000" }}
+            className="fa fa-times" aria-hidden="true"
+              id="menuIcon"
+            style={{ color: "#000000", fontSize:"23px" }}
           ></i>
            <a href="#home" onClick={toggleMenu}>Home</a>
           <a href="#about" onClick={toggleMenu}>About</a>
