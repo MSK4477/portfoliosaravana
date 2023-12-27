@@ -7,11 +7,11 @@ function Footer() {
                 <i className="fa-brands fa-github" style={{color:"#ffffff;"}}></i>
                 </a>
                 
-                <a href="https://www.linkedin.com/in/saravana043/">
+                {/* <a href="https://www.linkedin.com/in/saravana043/">
 
                 <i className="fa-brands fa-linkedin" style={{color:"#ffffff;"}}></i>
 
-                </a>
+                </a> */}
             
             </div>
             <p >Consistency is The Key To Success</p>

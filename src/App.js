@@ -18,14 +18,14 @@ import "./styles/footer.scss";
 function App() {
   return (
     <>
-      <Header />
+        <Header />
       <Home />
-      <About />
-      <Projects />
+      <About />   \
       <Skills />
+      <Projects /> 
       <Contact />
       <Footer />
-      <Toaster />
+      <Toaster /> *
       <div
       title="Send Mail"
         style={{

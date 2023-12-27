@@ -26,7 +26,7 @@ const Home = () => {
           />
           </h1>
           <img src={homeSvg} alt="homeImg" />
-          <a id="resume" href={resume} download="resume">Resume</a>
+          <a id="resume" href={resume} rel="noreferrer" target="_blank">Resume</a>
     </div>
   );
 };

@@ -24,8 +24,8 @@ const Header = () => {
 
           <a href="#home" >Home</a>
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
           <a href="#contact" >Contact</a>
         </main>
             </nav>
@@ -41,8 +41,8 @@ const Header = () => {
           ></i>
            <a href="#home" onClick={toggleMenu}>Home</a>
           <a href="#about" onClick={toggleMenu}>About</a>
-          <a href="#projects" onClick={toggleMenu}>Projects</a>
           <a href="#skills" onClick={toggleMenu}>Skills</a>
+          <a href="#projects" onClick={toggleMenu}>Projects</a>
           <a href="#contact" onClick={toggleMenu}>Contact</a>
         </div>
       )}
@@ -51,3 +51,4 @@ const Header = () => {
 };
 
 export default Header;
+

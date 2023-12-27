@@ -32,7 +32,7 @@ function About() {
          initial={animations.one}
         >
           <p>
-            I'm Saravana, a 2021 Computer Science graduate from Hindustan
+            I'm Saravana,  Computer Science graduate from Hindustan
             College of Arts and Science. I am a fresher, and I am enthusiastic
             about starting my career as a web developer.
           </p>
