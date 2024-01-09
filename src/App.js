@@ -25,7 +25,7 @@ function App() {
       <Projects /> 
       <Contact />
       <Footer />
-      <Toaster /> *
+      <Toaster /> 
       <div
       title="Send Mail"
         style={{
