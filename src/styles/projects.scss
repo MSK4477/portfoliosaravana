@@ -13,11 +13,13 @@
   position: relative;
 
   > h2 {
-    font: 300 2rem $text2;
+    font: 100 2rem $text2;
     margin: 0 auto;
     width: fit-content;
     word-spacing: 4px;
     border-bottom: 1px solid $second;
+    position: relative;
+    top: 70px;
   }
   > section {
     display: flex;
@@ -55,7 +57,7 @@
       object-fit: contain;
       }
 
-      > h2 {
+      > h1 {
         font: 300 0.7rem $text2;
         padding: 1rem 0;
         color: rgb(242, 156, 43);
@@ -89,6 +91,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    top: 10%;
     flex-direction: column;
     width: 100%;
     height: 100vh;

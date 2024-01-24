@@ -19,9 +19,9 @@ flex-grow: 1;
     padding-top: 7rem;
     background-color: rgb(255, 248, 248);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    > h1 {
+    > h2 {
       position: absolute;
-      top: 0;
+      top: 40px;
       margin: auto;
       font: 300 2rem $text2;
       width: fit-content;

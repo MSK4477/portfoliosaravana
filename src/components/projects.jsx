@@ -28,7 +28,7 @@ const Projects = () => {
 {data.projects.map((item) => (
   <div   key={item.id}>
     <img src={item.img} alt="projImg" />
-    <h2 >{item.title}</h2>
+    <h1>{item.title}</h1>
     <a href={`#${id}`} onClick={()=> handleClick(item.id)} className='btn'>View</a>
     </div>
 

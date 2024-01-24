@@ -2,7 +2,7 @@
 
 #header{
   width: 100%;
-  height: 100px;
+  height: 60px;
   display: flex;
   background-color: white;
   align-items: center;
@@ -25,18 +25,18 @@
     position: relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   
-    &:hover::after{
-      width: 100%;
-      position: absolute;
-      content: "";
-      height: 2px;
-      z-index: -1;
-      top:10%;
-      transition: all 0.3s ease-in-out;
-      border-radius: 50px;
-      background-color: rgb(252, 238, 108);
-      padding: 1.4rem 0;
-    }
+    // &:hover::after{
+    //   width: 100%;
+    //   position: absolute;
+    //   content: "";
+    //   height: 2px;
+    //   z-index: -1;
+    //   top:10%;
+    //   transition: all 0.3s ease-in-out;
+    //   border-radius: 50px;
+    //   background-color: rgb(252, 238, 108);
+    //   padding: 1.4rem 0;
+    // }
   
   }
   #menuIcon{
@@ -55,9 +55,7 @@
       transition: all 0.4s;
       letter-spacing: 1px;
 
-      &:active{
-        color: rgb(255, 136, 0);
-      }
+     
       &:hover {
         color: rgb(0, 177, 248);
         border-bottom: 2px solid skyblue;

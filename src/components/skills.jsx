@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <main id="skills">
       <section className="skillContainer">
-        <h1>Skills</h1>
+        <h2>Skills</h2>
         {skills.skills.map((item) => (
           <div className="mainSection">
             <img src={item.img} alt="img" />
