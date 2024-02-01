@@ -1,9 +1,9 @@
 import homeSvg from "../svg/designer-9c.svg";
 import TypeWriterEffect from 'typewriter-effect';
-import resume from "../svg/resume.pdf"
+
  
 const Home = () => {
-
+const resume = "https://docs.google.com/document/d/1agmUju0oTzqLc27h7CcQl-BN4M476ay33c9XbkRLg94/edit"
   return (
     <div  id="home">
       <h1>
