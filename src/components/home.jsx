@@ -3,7 +3,7 @@ import TypeWriterEffect from 'typewriter-effect';
 
  
 const Home = () => {
-const resume = "https://docs.google.com/document/d/1agmUju0oTzqLc27h7CcQl-BN4M476ay33c9XbkRLg94/edit"
+const resume = "https://docs.google.com/document/d/1X-QuS2IW_me78cWJ8xTqNI8XyXsaWrDY/edit"
   return (
     <div  id="home">
       <h1>
